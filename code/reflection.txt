@@ -5,3 +5,5 @@ terminology from this assignment (grain, long vs. wide, vectorized .str methods,
 coerce, NaT, pd.to_datetime format, .dt, concat, ignore_index, group by, named
 aggregation, reset_index, pivot_table, fill_value, melt, lineage), and make it
 actionable.
+
+Throughout this assignment we cleaned different payroll exports and turned it into one clean report. Much of the data that need to be cleaned belonged to the employee ids. I had to turn them into the E00(?) format from the incorrect e00(?) or E(?). This was done using strip and replace, as well as other .str values that can be found in our clean_employee_id function. I struggled during this assignment to make some of the tests pass. Especially the one regarding the employee_id I didnt clean it to show what the tests were asking for. 
