@@ -138,7 +138,6 @@ def combine_exports(exports: list) -> pd.DataFrame:
     return pd.concat(exports, ignore_index=True)
 
 
-
 def add_clean_columns(history: pd.DataFrame) -> pd.DataFrame:
     """Return a copy of the combined history with five clean columns added.
 

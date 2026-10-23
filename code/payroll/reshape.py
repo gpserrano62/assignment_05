@@ -40,9 +40,7 @@ def hours_grid(history: pd.DataFrame) -> pd.DataFrame:
         aggfunc="sum",
         fill_value=0,
     ).reset_index()
-    grid.columns.name = None
     return grid.sort_values("employee_id").reset_index(drop=True)
-
 
 
 def missed_weeks(grid: pd.DataFrame) -> pd.DataFrame:
@@ -83,5 +81,4 @@ def pay_by_month(history: pd.DataFrame) -> pd.DataFrame:
         aggfunc="sum",
         fill_value=0.0,
     ).reset_index()
-    monthly.columns.name = None
     return monthly.round(2)
